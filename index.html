@@ -1,0 +1,393 @@
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insijam - Integrated Platform | منصة متكاملة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"
+    integrity="sha512-Cv93Ef6ZtWjP3zgeovsBLbgKP5g+UQMl3zTswVIVFqv1dwKI3H33CpEseL8wzGKXJ68c7XL3m2EOIpV0e+GO/w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <!-- Theme Toggle Switch Styles -->
+      <div class="theme-toggle hero-theme-toggle">
+        <input type="checkbox" id="theme-switch">
+        <label for="theme-switch" class="slider"></label>
+      </div>
+      <div class="language-toggle" id="language-toggle">
+        <i class="fas fa-language"></i> <span data-en="English" data-ar="العربية">العربية</span>
+      </div>
+      <img src="logo insigam.png" alt="Insijam Logo" class="logo">
+      <h1 data-en="Welcome to Insijam" data-ar="مرحباً بكم في انسجام">مرحباً بك في انسجام</h1>
+      <p data-en="An integrated platform for team collaboration "
+        data-ar="منصة متكاملة للفرق الافتراضية.">منصة متكاملة للتعاون الجماعي .</p>
+
+    </div>
+  </section>
+
+  <div class="main-container">
+    <nav class="sidebar">
+      <div class="logo" data-en="Insijam" data-ar="انسجام"><i class="fas fa-rocket"></i> انسجام</div>
+      <ul class="menu">
+        <li data-page="dashboard" data-en="Dashboard" data-ar="لوحة التحكم"><i class="fas fa-home"></i><span
+            data-en="Dashboard" data-ar="لوحة التحكم">لوحة التحكم</span></li>
+        <li data-page="tasks" data-en="Tasks & Projects" data-ar="المهام والمشاريع"><i
+            class="fas fa-tasks"></i><span data-en="Tasks & Projects" data-ar="المهام والمشاريع">المهام
+            والمشاريع</span></li>
+        
+        <li data-page="meetings" data-en="Meetings" data-ar="الاجتماعات"><i
+            class="fas fa-calendar-alt"></i><span data-en="Meetings" data-ar="الاجتماعات">الاجتماعات</span></li>
+        
+        <li data-page="messages" data-en="Messages & Notifications" data-ar="الرسائل والإشعارات"><i
+            class="fas fa-envelope"></i><span data-en="Messages & Notifications"
+            data-ar="الرسائل والإشعارات">الرسائل والإشعارات</span></li>
+            <li data-page="miro" data-en="Miro Collaboration" data-ar="التعاون باستخدام Miro"><i
+              class="fas fa-palette"></i><span data-en="Miro Collaboration" data-ar="التعاون باستخدام Miro">التعاون باستخدام Miro</span></li>
+      <li data-page="trello" data-en="Trello Task Management" data-ar="إدارة المهام باستخدام Trello"><i
+              class="fas fa-trello"></i><span data-en="Trello Task Management" data-ar="إدارة المهام باستخدام Trello">إدارة المهام باستخدام Trello</span></li>
+      <li data-page="google-docs" data-en="Google Docs Integration" data-ar="تكامل Google Docs"><i
+              class="fas fa-file-alt"></i><span data-en="Google Docs Integration" data-ar="تكامل Google Docs">تكامل Google Docs</span></li>
+              <li data-page="reports" data-en="Reports  " data-ar=" التقارير"><i
+                class="fas fa-envelope"></i><span data-en="Reports"
+                data-ar="التفارير ">التقارير </span></li>
+        <li data-page="settings" data-en="Settings & Profile" data-ar="الإعدادات والملف الشخصي"><i
+            class="fas fa-cog"></i><span data-en="Settings & Profile"
+            data-ar="الإعدادات والملف الشخصي">الإعدادات والملف الشخصي</span></li>
+        <li data-page="help" data-en="Help & Support" data-ar="المساعدة والدعم"><i
+            class="fas fa-question-circle"></i><span data-en="Help & Support" data-ar="المساعدة والدعم">المساعدة
+            والدعم</span></li>
+      </ul>
+      
+    </nav>
+
+    <main class="content">
+      <section id="dashboard" class="page">
+        <h1 data-en="Leader Dashboard" data-ar=" لوحة التحكم الخاصة بقائد الفريق"><i class="fas fa-home"></i>  لوحة الحكم الخاصة بقائد الفريق</h1>
+        <div class="card">
+            <h2 data-en="Team Overview" data-ar="نظرة عامة على الفريق">نظرة عامة على الفريق</h2>
+            <p data-en="This section provides an overview of team performance, progress, and key metrics." data-ar="تقدم هذه الصفحة لمحة عامة عن أداء الفريق، التقدم المحرز، والقياسات الرئيسية.">تقدم هذه الصفحة لمحة عامة عن أداء الفريق، التقدم المحرز، والقياسات الرئيسية.</p>
+            
+        </div>
+    </section>
+    
+       <section id="performance" class="page">
+        <div class="card">
+            <h2 data-en="Team Performance" data-ar="أداء اعضاء الفريق "><i class="fas fa-users"></i> أداء الفريق</h2>
+            <div class="chart-container">
+                <canvas id="teamPerformanceChart" class="chart"></canvas>
+            </div>
+            <table class="team-performance-table">
+                <thead>
+                    <tr>
+                        <th data-en="Team Member Name" data-ar="اسم العضو">اسم العضو</th>
+                        <th data-en="Performance Percentage" data-ar="نسبة الأداء">نسبة الأداء</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-en="Salma Mohammed" data-ar=" سلمى محمد"> سلمى محمد</td>
+                        <td id="team-a-percentage">40%</td>
+                    </tr>
+                    <tr>
+                        <td data-en="Fatima Ahmed" data-ar=" فاطمة أحمد"> فاطمة أحمد</td>
+                        <td id="team-b-percentage">70%</td>
+                    </tr>
+                    <tr>
+                        <td data-en=" Rania Ali" data-ar=" رانيا علي">رانيا علي</td>
+                        <td id="team-c-percentage">30%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        </section>
+        <section id="tasks" class="page"> 
+        <div class="card">
+          <h2 data-en="Create and Distribute Tasks" data-ar="إنشاء وتوزيع المهام"><i class="fas fa-plus-circle"></i> إنشاء وتوزيع المهام</h2>
+          <p data-en="Only team managers can create and assign tasks to members." data-ar="فقط مديرو الفريق يمكنهم إنشاء المهام وتعيينها للأعضاء.">فقط مديرو الفريق يمكنهم إنشاء المهام وتعيينها للأعضاء.</p>
+          <button id="create-task-button" data-en="Create New Task" data-ar="إنشاء مهمة جديدة"><i class="fas fa-plus"></i> إنشاء مهمة جديدة</button>
+          <div id="task-creation-form" style="display: none;">
+              <input type="text" id="task-name" data-en-placeholder="Task Name" data-ar-placeholder="اسم المهمة" placeholder="اسم المهمة">
+              <textarea id="task-description" data-en-placeholder="Task Description" data-ar-placeholder="وصف المهمة" placeholder="وصف المهمة"></textarea>
+              <select id="task-assignee">
+                  <option value="user1" data-en="User 1" data-ar="المستخدم 1">المستخدم 1</option>
+                  <option value="user2" data-en="User 2" data-ar="المستخدم 2">المستخدم 2</option>
+              </select>
+              <input type="date" id="task-due-date" data-en-placeholder="Due Date" data-ar-placeholder="تاريخ الاستحقاق">
+              <select id="task-priority">
+                  <option value="low" data-en="Low" data-ar="منخفضة">منخفضة</option>
+                  <option value="medium" data-en="Medium" data-ar="متوسطة">متوسطة</option>
+                  <option value="high" data-en="High" data-ar="عالية">عالية</option>
+              </select>
+              <input type="file" id="task-attachments" multiple data-en-placeholder="Attachments" data-ar-placeholder="المرفقات">
+              <button id="submit-task" data-en="Submit Task" data-ar="إرسال المهمة"><i class="fas fa-check"></i> إرسال المهمة</button>
+          </div>
+      </div>
+      <div class="card">
+        <h2 data-en="Task Tracking System" data-ar="نظام تتبع المهام"><i class="fas fa-tasks"></i> نظام تتبع المهام</h2>
+        <div id="kanban-board">
+          <div class="kanban-column" data-status="todo">
+              <h3 data-en="To Do" data-ar="قائمة المهام">قائمة المهام</h3>
+              <ul class="kanban-list">
+                <li class="kanban-item" data-task-id="1" data-status="todo" draggable="true" data-assignee="فاطمة" data-start-date="2025-03-12" data-end-date="2025-03-18" data-completion="75">
+                  <div class="task-grid">
+                    <span class="task-title" data-en="Task 1" data-ar="المهمة 1">المهمة 1</span>
+                    <span class="assignee"><i class="fas fa-user"></i> (سلمى)</span><br>
+                    <span class="start-date"><i class="fas fa-calendar-alt"></i> البداية: 2025-02-12</span>
+                    <span class="end-date"><i class="fas fa-calendar-check"></i> النهاية: 2025-02-18</span>
+                    <span class="completion"><i class="fas fa-check-circle"></i> الإنجاز: 100%</span><br>
+                </div>
+                <li class="kanban-item" data-task-id="2" data-status="todo" draggable="true" data-assignee="سلمى" data-start-date="2024-02-12" data-end-date="2024-03-18" data-completion="75">
+
+                  <div class="task-grid">
+                      <span class="task-title" data-en="Task 2" data-ar="المهمة 2">المهمة 2</span>
+                      <span class="assignee"><i class="fas fa-user"></i> (فاطمة)</span><br>
+                      <span class="start-date"><i class="fas fa-calendar-alt"></i> البداية: 2025-03-12</span>
+                      <span class="end-date"><i class="fas fa-calendar-check"></i> النهاية: 2025-03-18</span>
+                      <span class="completion"><i class="fas fa-check-circle"></i> الإنجاز: 75%</span><br>
+                  </div>
+                  
+              </li>
+              </ul>
+            </div>
+          <div id="kanban-charts">
+            <canvas id="tasks-status-chart"></canvas>
+            <canvas id="tasks-completion-chart"></canvas>
+       
+        </div>
+    </section>
+    <section id="meetings" class="page">
+    <div class="card">
+        <h2 data-en="Create Meeting" data-ar="إنشاء اجتماع"><i class="fas fa-calendar-plus"></i> إنشاء اجتماع</h2>
+        <form id="createMeetingForm">
+            <input type="text" id="meetingTitle" data-en-placeholder="Meeting Title" data-ar-placeholder="عنوان الاجتماع" placeholder="عنوان الاجتماع" required>
+            <input type="datetime-local" id="meetingDateTime" data-en-placeholder="Date and Time" data-ar-placeholder="التاريخ والوقت" required>
+            <textarea id="meetingAgenda" data-en-placeholder="Agenda" data-ar-placeholder="جدول الأعمال" placeholder="جدول الأعمال" required></textarea>
+            <input type="text" id="meetingParticipants" data-en-placeholder="Participants" data-ar-placeholder="المشاركون" placeholder="المشاركون" required>
+            <input type="text" id="meetingLocation" data-en-placeholder="Location" data-ar-placeholder="الموقع" placeholder="الموقع" required>
+            <button type="submit" data-en="Create Meeting" data-ar="إنشاء الاجتماع"><i class="fas fa-plus"></i> إنشاء الاجتماع</button>
+        </form>
+    </div>
+    
+   
+</section>
+  
+    <section id="Statistics" class="page">
+    <div class="card">
+      <h2 data-en="Team Statistics" data-ar="إحصائيات الفريق"><i class="fas fa-chart-bar"></i> إحصائيات الفريق</h2>
+      <div class="chart-container">
+          <canvas id="teamStatsChart"></canvas>
+      </div>
+      <table id="completedTasksTable">
+          <thead>
+              <tr>
+                  <th data-en="Task Name" data-ar="اسم المهمة">اسم المهمة</th>
+                  <th data-en="Completed By" data-ar="تم الإنجاز بواسطة">تم الإنجاز بواسطة</th>
+                  <th data-en="Completion Date" data-ar="تاريخ الإنجاز">تاريخ الإنجاز</th>
+              </tr>
+          </thead>
+          <tbody>
+              </tbody>
+      </table>
+  </div>
+ </section>
+  
+   
+
+      <section id="tasks" class="page" style="display: none;">
+        <h1 data-en="Tasks & Projects" data-ar="المهام والمشاريع"><i class="fas fa-tasks"></i> المهام والمشاريع</h1>
+        <div class="card">
+          <h2 data-en="Create and Distribute Tasks" data-ar="إنشاء وتوزيع المهام"><i class="fas fa-plus-circle"></i> إنشاء وتوزيع المهام</h2>
+          <p data-en="Only team managers can create and assign tasks to members."
+            data-ar="فقط مديرو الفريق يمكنهم إنشاء المهام وتعيينها للأعضاء.">فقط مديرو الفريق يمكنهم إنشاء المهام وتعيينها
+            للأعضاء.</p>
+          <button id="create-task-button" data-en="Create New Task" data-ar="إنشاء مهمة جديدة"><i class="fas fa-plus"></i> إنشاء مهمة
+            جديدة</button>
+          <div id="task-creation-form" style="display: none;">
+            <input type="text" id="task-name" data-en-placeholder="Task Name" data-ar-placeholder="اسم المهمة"
+              placeholder="اسم المهمة">
+            <textarea id="task-description" data-en-placeholder="Task Description"
+              data-ar-placeholder="وصف المهمة" placeholder="وصف المهمة"></textarea>
+            <select id="task-assignee">
+              <option value="user1" data-en="User 1" data-ar="المستخدم 1">المستخدم 1</option>
+              <option value="user2" data-en="User 2" data-ar="المستخدم 2">المستخدم 2</option>
+            </select>
+            <button id="submit-task" data-en="Submit Task" data-ar="إرسال المهمة"><i class="fas fa-check"></i> إرسال المهمة</button>
+          </div>
+        </div>
+        <div class="card">
+          <h2 data-en="Task Tracking System" data-ar="نظام تتبع المهام"><i class="fas fa-chart-line"></i> نظام تتبع المهام</h2>
+          <ul>
+            <li data-en="Task 1 - In Progress" data-ar="المهمة 1 - قيد التنفيذ"><i class="fas fa-spinner fa-spin"></i> المهمة 1 - قيد التنفيذ</li>
+            <li data-en="Task 2 - Overdue" data-ar="المهمة 2 - متأخرة"><i class="fas fa-exclamation-circle"></i> المهمة 2 - متأخرة</li>
+            <li data-en="Task 3 - Completed" data-ar="المهمة 3 - مكتملة"><i class="fas fa-check-double"></i> المهمة 3 - مكتملة</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2 data-en="Smart Task Analysis" data-ar="تحليل المهام الذكي"><i class="fas fa-brain"></i> تحليل المهام الذكي</h2>
+          <p data-en="AI suggests task distribution based on previous member performance."
+            data-ar="الذكاء الاصطناعي يقترح توزيع المهام بناءً على أداء الأعضاء السابق.">الذكاء الاصطناعي يقترح توزيع المهام
+            بناءً على أداء الأعضاء السابق.</p>
+        </div>
+      </section>
+
+      
+        <section id="meetings" class="page" style="display: none;">
+        <h1 data-en="Meetings" data-ar="الاجتماعات"><i class="fas fa-calendar-alt"></i> الاجتماعات</h1>
+        <div class="card">
+          <h2 data-en="Meeting Calendar" data-ar="تقويم الاجتماعات"><i class="fas fa-calendar-week"></i> تقويم الاجتماعات</h2>
+          <p data-en="Displays all scheduled meetings." data-ar="يعرض جميع الاجتماعات المجدولة.">يعرض جميع الاجتماعات
+            المجدولة.</p>
+        </div>
+        <div class="card">
+          <h2 data-en="Automated Appointment Scheduling" data-ar="جدولة المواعيد التلقائية"><i class="fas fa-calendar-plus"></i> جدولة المواعيد التلقائية</h2>
+          <p data-en="AI suggests suitable times based on time zones."
+            data-ar="الذكاء الاصطناعي يقترح الأوقات المناسبة بناءً على المناطق الزمنية.">الذكاء الاصطناعي يقترح الأوقات
+            المناسبة بناءً على المناطق الزمنية.</p>
+        </div>
+        <div class="card">
+          <h2 data-en="Integration with Zoom and Google Meet" data-ar="التكامل مع Zoom وGoogle Meet"><i class="fas fa-video"></i> التكامل مع Zoom
+            وGoogle
+            Meet</h2>
+          <p data-en="Join meetings directly from the platform." data-ar="انضم إلى الاجتماعات مباشرة من المنصة.">انضم
+            إلى الاجتماعات مباشرة من المنصة.</p>
+        </div>
+      </section>
+
+      <section id="miro" class="page">
+        <h2 data-en="Miro Collaboration" data-ar="التعاون باستخدام Miro">التعاون باستخدام Miro</h2>
+        <div class="card">
+        <p data-en="Miro is a collaborative platform for teams to work on visual brainstorming, planning, and design." data-ar="Miro هي منصة تعاونية للفرق للعمل على العصف الذهني البصري، والتخطيط، والتصميم.">Miro هي منصة تعاونية للفرق للعمل على العصف الذهني البصري، والتخطيط، والتصميم.</p>
+        <p data-en="Integrate Miro to improve team collaboration and idea sharing." data-ar="دمج Miro لتحسين التعاون بين الفريق ومشاركة الأفكار.">دمج Miro لتحسين التعاون بين الفريق ومشاركة الأفكار.</p>
+      </div>
+    </section>
+    
+    <section id="trello" class="page">
+        <h2 data-en="Trello Task Management" data-ar="إدارة المهام باستخدام Trello">إدارة المهام باستخدام Trello</h2>
+        <div class="card">
+        <p data-en="Trello is a popular task management tool that helps teams organize and prioritize tasks." data-ar="Trello هو أداة شائعة لإدارة المهام تساعد الفرق على تنظيم المهام وتحديد الأولويات.">Trello هو أداة شائعة لإدارة المهام تساعد الفرق على تنظيم المهام وتحديد الأولويات.</p>
+        <p data-en="Integrate Trello for efficient task tracking and collaboration." data-ar="دمج Trello لتتبع المهام بكفاءة والتعاون." >دمج Trello لتتبع المهام بكفاءة والتعاون.</p>
+      </div>
+    </section>
+    
+    <section id="google-docs" class="page">
+        <h2 data-en="Google Docs Integration" data-ar="تكامل Google Docs">تكامل Google Docs</h2>
+        <div class="card">
+        <p data-en="Google Docs allows teams to create, edit, and share documents in real time." data-ar="يسمح Google Docs للفرق بإنشاء المستندات وتحريرها ومشاركتها في الوقت الفعلي.">يسمح Google Docs للفرق بإنشاء المستندات وتحريرها ومشاركتها في الوقت الفعلي.</p>
+        <p data-en="Integrating Google Docs enhances document collaboration and sharing." data-ar="دمج Google Docs يعزز التعاون في المستندات والمشاركة.">دمج Google Docs يعزز التعاون في المستندات والمشاركة.</p>
+      </div>
+    </section>
+    
+
+     
+        
+       
+
+      <section id="messages" class="page" style="display: none;">
+        <h1 data-en="Messages & Notifications" data-ar="الرسائل والإشعارات"><i class="fas fa-envelope"></i> الرسائل والإشعارات</h1>
+        <div class="card">
+          <h2 data-en="Smart Inbox" data-ar="صندوق الوارد الذكي"><i class="fas fa-inbox"></i> صندوق الوارد الذكي</h2>
+          <p data-en="Organizing conversations by priority using AI."
+            data-ar="تنظيم المحادثات حسب الأولوية باستخدام الذكاء
+          الاصطناعي.">تنظيم المحادثات حسب الأولوية باستخدام الذكاء الاصطناعي.</p>
+        </div>
+        <section id="" class="page">
+        <div class="card">
+          <h2 data-en="Instant Messaging" data-ar="المراسلات الفورية"><i class="fas fa-comment"></i> المراسلات الفورية</h2>
+          <p data-en="Supports sending text and voice messages between members."
+            data-ar="يدعم إرسال الرسائل النصية والصوتية بين الأعضاء.">يدعم إرسال الرسائل النصية والصوتية بين الأعضاء.</p>
+        </div>
+      </section>
+        <div class="card">
+          <h2 data-en="Task Alerts" data-ar="تنبيهات المهام"><i class="fas fa-bell"></i> تنبيهات المهام</h2>
+          <p data-en="Notifications when the status of any task changes or when action is needed."
+            data-ar="إشعارات عند تغيير حالة أي مهمة أو عند الحاجة لاتخاذ إجراء.">إشعارات عند تغيير حالة أي مهمة أو عند
+            الحاجة
+            لاتخاذ إجراء.</p>
+        </div>
+      </section>
+      <section id="reports" class="page">
+        <div class="card">
+            <h2 data-en="Weekly and Monthly Reports" data-ar="تقارير أسبوعية وشهرية"><i
+                    class="fas fa-file-alt"></i> تقارير أسبوعية وشهرية</h2>
+            <p data-en="Displays performance compared to set goals."
+                data-ar="يعرض الأداء مقارنة بالأهداف المحددة.">يعرض الأداء مقارنة بالأهداف المحددة.</p>
+        </div>
+    </section>
+            <section id="settings" class="page" style="display: none;">
+        <h1 data-en="Settings & Profile" data-ar="الإعدادات والملف الشخصي"><i class="fas fa-cog"></i> الإعدادات والملف الشخصي</h1>
+        <div class="card">
+          <h2 data-en="Edit Profile" data-ar="تعديل الملف الشخصي"><i class="fas fa-user-edit"></i> تعديل الملف الشخصي</h2>
+          <p data-en="Update personal and job data." data-ar="تحديث البيانات الشخصية والوظيفية.">تحديث البيانات
+            الشخصية
+            والوظيفية.</p>
+        </div>
+        
+        <div class="card">
+          <h2 data-en="Notification Settings" data-ar="إعدادات الإشعارات"><i class="fas fa-bell"></i> إعدادات الإشعارات</h2>
+          <p data-en="Control the type of notifications the user receives."
+            data-ar="التحكم في نوع الإشعارات التي يتلقاها المستخدم.">التحكم في نوع الإشعارات التي يتلقاها المستخدم.</p>
+        </div>
+      
+        
+        <div class="card">
+          <h2 data-en="Privacy Settings" data-ar="إعدادات الخصوصية"><i class="fas fa-user-shield"></i> إعدادات الخصوصية</h2>
+          <p data-en="Adjust who can see the user's information." data-ar="ضبط من يمكنه رؤية معلومات المستخدم.">ضبط من
+            يمكنه رؤية معلومات المستخدم.</p>
+        </div>
+      </section>
+
+      <section id="help" class="page" style="display: none;">
+        <h1 data-en="Help & Support" data-ar="المساعدة والدعم"><i class="fas fa-question-circle"></i> المساعدة والدعم</h1>
+        <div class="card">
+          <h2 data-en="Knowledge Base" data-ar="قاعدة المعرفة"><i class="fas fa-book"></i> قاعدة المعرفة</h2>
+          <p data-en="Platform usage guide and explanation of different features."
+            data-ar="دليل استخدام المنصة وشرح الميزات المختلفة.">دليل استخدام المنصة وشرح الميزات المختلفة.</p>
+        </div>
+        
+        <div class="card">
+          <h2 data-en="Technical Support Tickets" data-ar="تذاكر الدعم الفني"><i class="fas fa-ticket-alt"></i> تذاكر الدعم الفني</h2>
+          <p data-en="Send and track help requests." data-ar="إرسال طلبات المساعدة ومتابعتها.">إرسال طلبات المساعدة
+            ومتابعتها.</p>
+        </div>
+      </div>
+      </section>
+    
+  
+
+<div id="chatbot-container" style="position: fixed; bottom: 20px; right: 20px;">
+  <button id="chatbot-button">مساعد ذكي</button>
+  <div id="chatbot-window" style="display: none; border: 1px solid #ccc; padding: 10px;">
+      <div id="chatbot-messages">
+          <div class="chatbot-message user-message">مرحباً!</div>
+          <div class="chatbot-message bot-message">مرحباً بك! كيف يمكنني مساعدتك؟</div>
+      </div>
+      <input type="text" id="chatbot-input">
+      <button id="chatbot-send">إرسال</button>
+  </div>
+</div>
+</div>
+</main>
+
+  <footer>
+    <p data-en="All rights reserved Copyright 2025 Insijam." data-ar="[جميع الحقوق محفوظة منصة انسجام 2025]">
+      . All rights reserved Copyright 2025 Insijam.
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insijam - Integrated Platform | منصة متكاملة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"
+    integrity="sha512-Cv93Ef6ZtWjP3zgeovsBLbgKP5g+UQMl3zTswVIVFqv1dwKI3H33CpEseL8wzGKXJ68c7XL3m2EOIpV0e+GO/w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <!-- Theme Toggle Switch Styles -->
+      <div class="theme-toggle hero-theme-toggle">
+        <input type="checkbox" id="theme-switch">
+        <label for="theme-switch" class="slider"></label>
+      </div>
+      <div class="language-toggle" id="language-toggle">
+        <i class="fas fa-language"></i> <span data-en="English" data-ar="العربية">العربية</span>
+      </div>
+      <img src="logo insigam.png" alt="Insijam Logo" class="logo">
+      <h1 data-en="Welcome to Insijam" data-ar="مرحباً بكم في انسجام">مرحباً بك في انسجام</h1>
+      <p data-en="An integrated platform for team collaboration "
+        data-ar="منصة متكاملة للفرق الافتراضية.">منصة متكاملة للتعاون الجماعي.</p>
+    </div>
+  </section>
+
+  <div class="main-container">
+    <nav class="sidebar">
+      <div class="logo" data-en="Insijam" data-ar="انسجام"><i class="fas fa-rocket"></i> انسجام</div>
+      <ul class="menu">
+        <li data-page="dashboard" data-en="Dashboard" data-ar="لوحة التحكم" class="menu-item">
+          <i class="fas fa-home"></i><span data-en="Dashboard" data-ar="لوحة التحكم">لوحة التحكم</span>
+        </li>
+        <li data-page="teams" data-en="teams" data-ar="الفرق" class="menu-item">
+          <i class="fas fa-tasks"></i><span data-en="teams" data-ar="الفرق">الفرق</span>
+        </li>
+        <li data-page="add_teams" data-en="add Teams" data-ar="إضافة فريق جديد" class="menu-item">
+          <i class="fas fa-calendar-alt"></i><span data-en="teams tracking" data-ar="إضافة الفرق">إضافة فريق جديد</span>
+        </li>
+        <li data-page="reports" data-en="Reports" data-ar="التقارير"><i
+            class="fas fa-envelope"></i><span data-en="Reports"
+            data-ar="التفارير ">التقارير </span></li>
+
+            <li data-page="help" data-en="Help & Support" data-ar="المساعدة والدعم"><i
+                class="fas fa-question-circle"></i><span data-en="Help & Support" data-ar="المساعدة والدعم">المساعدة والدعم</span></li>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <section id="dashboard" class="page active">
+        <h1 data-en="Manager Dashboard" data-ar=" لوحة التحكم الخاصة بالمدير"><i class="fas fa-home"></i>  لوحة التحكم الخاصة بالمدير</h1>
+        <div class="card">متابعة الفرق</div>
+      </section>
+
+      <section id="teams" class="page">
+        <div class="team-progress">
+          <h2>متابعة إنجاز الفرق</h2>
+          <div class="team-card">
+            <span>فريق التطوير</span>
+            <div class="progress-bar">
+              <div style="width: 80%;"></div>
+            </div>
+            <span>80%</span>
+          </div>
+          <div class="team-card">
+            <span>فريق التصميم</span>
+            <div class="progress-bar">
+              <div style="width: 60%;"></div>
+            </div>
+            <span>60%</span>
+          </div>
+          <div class="team-card">
+            <span>فريق التسويق</span>
+            <div class="progress-bar">
+              <div style="width: 40%;"></div>
+            </div>
+            <span>40%</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="add_teams" class="page">
+        <h2>إضافة فريق جديد</h2>
+        <form id="team-form">
+          <label for="team-name">اسم الفريق:</label>
+          <input type="text" id="team-name" required>
+
+          <label for="team-leader">قائد الفريق:</label>
+          <input type="text" id="team-leader" required>
+
+          <label for="team-goals">الأهداف:</label>
+          <textarea id="team-goals" required></textarea>
+
+          <button type="submit">إضافة الفريق</button>
+        </form>
+      </section>
+
+      <section id="help" class="page" style="display: none;">
+        <h1 data-en="Help & Support" data-ar="المساعدة والدعم"><i class="fas fa-question-circle"></i> المساعدة والدعم</h1>
+        <div class="card">
+            <h2 data-en="Knowledge Base" data-ar="قاعدة المعرفة"><i class="fas fa-book"></i> قاعدة المعرفة</h2>
+            <p data-en="Platform usage guide and explanation of different features." data-ar="دليل استخدام المنصة وشرح الميزات المختلفة.">دليل استخدام المنصة وشرح الميزات المختلفة.</p>
+        </div>
+        <div class="card">
+            <h2 data-en="Technical Support Tickets" data-ar="تذاكر الدعم الفني"><i class="fas fa-ticket-alt"></i> تذاكر الدعم الفني</h2>
+            <p data-en="Send and track help requests." data-ar="إرسال طلبات المساعدة ومتابعتها.">إرسال طلبات المساعدة ومتابعتها.</p>
+        </div>
+    </section>
+    </main>
+  </div>
+
+  <script>
+    // Function to switch between pages
+    document.querySelectorAll('.menu-item').forEach(item => {
+      item.addEventListener('click', function () {
+        // Hide all pages
+        document.querySelectorAll('.page').forEach(page => {
+          page.classList.remove('active');
+        });
+
+        // Show the selected page
+        const pageId = this.getAttribute('data-page');
+        document.getElementById(pageId).classList.add('active');
+      });
+    });
+
+    // Form submission handling
+    document.getElementById('team-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      alert('تمت إضافة الفريق بنجاح!');
+      this.reset();
+    });
+  </script>
+
+  
+
+</body>
+
+</html>
